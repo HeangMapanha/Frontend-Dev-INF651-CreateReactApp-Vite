@@ -1,7 +1,4 @@
-import { useState, useRef } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
+
 import './App.css'
 
 import Profile from '../components/Profile'
@@ -34,7 +31,7 @@ function App() {
     //   <input ref={inputRef} onChange={CheckNum}/>
     // </div>
     
-    <Profile props={data}/>
+    <Profile {...data}/>
 
   )
 }

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import ProfileHead from "./profilehead";
-import ProfileBody from "./Profilebody";
+import ProfileBody from "./ProfileBody";
 
 function Profile(props) {
   const [liked, setLiked] = useState(false)
