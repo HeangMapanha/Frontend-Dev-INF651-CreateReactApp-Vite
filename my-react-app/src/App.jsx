@@ -2,20 +2,10 @@
 import './App.css'
 
 import Profile from '../components/Profile'
+import { StateExample } from '../components/euseState'
+import { RefExample } from '../components/euseRef'
 
 function App() {
-  // const [count, setCount] = useState(1)
-  // const inputRef = useRef(null)
-  // function updateNum() {
-  //   setCount((prev) => prev + 1)
-  //   // setCount((prev) => prev + 1)
-  //   // setCount((prev) => prev + 1)
-
-  // } 
-
-  // function CheckNum() {
-  //   console.log(inputRef.current.value)
-  // }
   const data = {
       name: "Alex Johnson",
       profession: "Frontend Developer",
@@ -25,13 +15,8 @@ function App() {
     }  
 
   return (
-    // <div>
-    //   <p>{count}</p>
-    //   <button onClick={updateNum}>CLICK ME</button>
-    //   <input ref={inputRef} onChange={CheckNum}/>
-    // </div>
-    
-    <Profile {...data}/>
+
+    <RefExample/>
 
   )
 }
