@@ -6,6 +6,8 @@ export const RefExample = () => {
     const saveNum = useRef(0)
     let unSaveNum = 0
 
+    const autoFocus = useRef(null)
+
     const OnClick = () => {
         // setCount(num + 1)
         // setCount(num + 1)
@@ -17,11 +19,17 @@ export const RefExample = () => {
         console.log(`saveNum: ${saveNum.current} -- unSaveNum: ${unSaveNum}`)
     }
     
+    const OnClickFocus = () => {
+        autoFocus.current.focus()
+    }
+
     return (
         <div>
             <p>{num}</p>
             <button onClick={OnClick}>Click me</button>
-            <button>Click me 2</button>
+            <button onClick={OnClickFocus}>Click me 2</button>
+
+            <input ref={autoFocus} placeholder="Yoo"/>
         </div>
     )
 }
